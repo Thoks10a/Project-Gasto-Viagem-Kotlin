@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/InputTextDistance"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/dist_ncia2"
+            android:inputType="number"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/TextViewText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="@string/total_de_quil_metros" />
+
+        <EditText
+            android:id="@+id/InputTextPrice"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/pre_o"
+            android:inputType="numberDecimal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:text="@string/pre_o_por_litro" />
+
+        <EditText
+            android:id="@+id/InputTextAuto"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/autonomia"
+            android:inputType="numberDecimal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:text="@string/kms_por_litro" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="@string/kms_por_litro"
+            android:textSize="24sp"
+            app:autoSizeMaxTextSize="20dp"
+            app:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:gravity="center"
+            android:text="@string/seu_gasto_total_ser_de"
+            android:textSize="24sp"
+            app:autoSizeMaxTextSize="20dp"
+            app:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/TextReal"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:gravity="center"
+            android:text="@string/r"
+            android:textColor="#804444"
+            android:textSize="16sp"
+            app:autoSizeMaxTextSize="16dp"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/ButtonCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:backgroundTint="#1CBFA7"
+            android:text="@string/calcular" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
