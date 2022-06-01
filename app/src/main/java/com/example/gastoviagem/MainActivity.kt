@@ -13,6 +13,12 @@ import java.text.DecimalFormat
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityMainBinding
+    /*
+    * Voce tbm pode fazer assim caso 2
+    *
+    * private lateinit var InputTextDistance: TextView
+    *
+    * */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -33,7 +39,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         var price = binding.InputTextPrice
         var auto = binding.InputTextAuto
         var real = binding.TextReal
+        // Exemplo outro tipo de pegar as informacoes caso 1
+        /*
 
+        var d = findViewById<TextView>(R.id.InputTextAuto)
+        var p = findViewById<TextView>(R.id.InputTextPrive)
+        var a = findViewById<TextView>(R.id.InputTextAuto)
+        var r = findViewById<TextView>(R.id.TextReal)
+
+        Caso 2
+
+        InputTextDistance = findViewById(R.id.InputTextDistance)
+        */
         val decimal = DecimalFormat("0.00")
 
         //var increment = 0
